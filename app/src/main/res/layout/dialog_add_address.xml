@@ -1,0 +1,93 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        &lt;!&ndash; Name field &ndash;&gt;-->
+<!--        <EditText-->
+<!--            android:id="@+id/editTextName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Name"-->
+<!--            android:inputType="text"-->
+<!--            android:padding="12dp"-->
+<!--            android:background="@drawable/rounded_edittext"/>-->
+
+        <!-- Phone Number Field -->
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number (Required)"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"/>
+
+        <!-- Pincode Field -->
+        <EditText
+            android:id="@+id/editTextPincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pincode (Required)"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_edittext"/>
+
+        <!-- State and City Fields (side by side) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/editTextState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="State (Required)"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="City (Required)"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rounded_edittext"/>
+        </LinearLayout>
+
+        <!-- House No./Building Name -->
+        <EditText
+            android:id="@+id/editTextHouseNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House No., Building Name (Required)"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"/>
+
+        <!-- Road Name, Area, Colony -->
+        <EditText
+            android:id="@+id/editTextStreetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Road name, Area, Colony (Required)"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"/>
+
+    </LinearLayout>
+</ScrollView>

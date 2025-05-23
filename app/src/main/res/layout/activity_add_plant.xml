@@ -1,0 +1,166 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9"
+    tools:context=".AddPlantActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <!-- Now move ALL your views inside this LinearLayout: -->
+
+
+            <!-- Plant Name EditText -->
+            <EditText
+                android:id="@+id/editPlantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plant Name"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp" />
+
+
+            <!-- Task Spinner -->
+            <Spinner
+                android:id="@+id/taskSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+
+            <!-- Frequency Spinner -->
+            <Spinner
+                android:id="@+id/frequencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+
+            <!-- Specific Days Layout -->
+            <LinearLayout
+                android:id="@+id/specificDayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="16dp">
+
+
+                <!-- Day Checkboxes -->
+                <CheckBox android:id="@+id/sunday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sunday" />
+                <CheckBox android:id="@+id/monday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monday" />
+                <CheckBox android:id="@+id/tuesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tuesday" />
+                <CheckBox android:id="@+id/wednesday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wednesday" />
+                <CheckBox android:id="@+id/thursday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thursday" />
+                <CheckBox android:id="@+id/friday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Friday" />
+                <CheckBox android:id="@+id/saturday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saturday" />
+            </LinearLayout>
+
+
+            <!-- Time EditText -->
+            <EditText
+                android:id="@+id/timeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Time"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginTop="16dp" />
+
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#388E3C"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" />
+
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reminderRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false" />
+
+
+            <!-- Search Button -->
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Plant Care Suggestions"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#388E3C"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center" />
+
+
+            <!-- Suggestion Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/suggestionCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/suggestionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:text="Care suggestions will appear here." />
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Time Suggestion Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/timeSuggestionCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/timeSuggestionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:text="Optimal reminder interval suggestion will appear here." />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

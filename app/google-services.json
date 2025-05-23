@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "610485216469",
+    "project_id": "greenaura-e2da2",
+    "storage_bucket": "greenaura-e2da2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610485216469:android:79ed37dab4167d10152e5c",
+        "android_client_info": {
+          "package_name": "com.example.greenaura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610485216469-d07l4s517tn7a3mo0vcg04inhkj493lk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greenaura",
+            "certificate_hash": "610b2449d399014b3b19c630aabda5be96a286fa"
+          }
+        },
+        {
+          "client_id": "610485216469-59v7ldn39kpampng8af9atvnohrddb3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfLv6voOKldC0RUgMsPcMFrwe7_wUrIB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610485216469-59v7ldn39kpampng8af9atvnohrddb3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

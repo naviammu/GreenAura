@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- GreenAura text above the GIF -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GreenAura"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#00B663"
+        android:fontFamily="@font/lucyrose"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/plantGif"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible" /> <!-- Initially invisible -->
+
+    <!-- Plant GIF -->
+    <ImageView
+        android:id="@+id/plantGif"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:adjustViewBounds="true"
+        android:visibility="invisible" /> <!-- Initially invisible -->
+
+</RelativeLayout>

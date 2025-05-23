@@ -1,0 +1,70 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:00"
+            android:textSize="36sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- AM/PM -->
+        <TextView
+            android:id="@+id/textViewAmPm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="am"
+            android:layout_toEndOf="@id/textViewTime"
+            android:layout_alignBottom="@id/textViewTime"
+            android:layout_marginStart="4dp"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <!-- Date or Repeat Days -->
+        <TextView
+            android:id="@+id/textViewDateDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sat, 26 Apr"
+            android:layout_below="@id/textViewTime"
+            android:layout_alignStart="@id/textViewTime"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+
+        <!-- Repeat Days TextView -->
+        <TextView
+            android:id="@+id/selectedDaysText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat: Sun, Mon"
+            android:layout_below="@id/textViewDateDays"
+            android:layout_alignStart="@id/textViewDateDays"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="#777777" />
+
+        <!-- Switch for ON/OFF -->
+        <Switch
+            android:id="@+id/switchActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
